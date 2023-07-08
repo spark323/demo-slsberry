@@ -27,7 +27,9 @@ const apiSpec = {
             type: 'object',
             properties: {
                 result: { type: 'string', desc: 'result' },
-                records: { type: 'object', desc: 'data' },
+                email: { type: 'string', desc: 'email' },
+                companyName: { type: 'string', desc: '회사명' },
+                type: { type: 'string', desc: '타입' },
             },
         },
     },
