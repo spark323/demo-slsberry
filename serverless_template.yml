@@ -20,7 +20,7 @@ provider:
     Environment: ${env:STAGE, "dev"}
   region: ${opt:region, "ap-northeast-2"}
   stackName: ${self:service}-${env:STAGE, "dev"}-${env:VER, "1"}-serverless
-  timeout: 20 #api gateway를 거칠 경우 lambda의 max
+  timeout: 30 #api gateway를 거칠 경우 lambda의 max
   environment:
     version: ${env:VER, "1"}
     stage: ${env:STAGE, "dev"}
